@@ -1,0 +1,114 @@
+/*! Tundra Theme for Brackets
+* by j myser
+**/
+
+
+/* Colors */
+
+@white: #ffffff;
+@light: #f7f7f7;
+@gray: #A5A5A5;
+@dark: rgba(0, 0, 0, 0.7);
+@rose: #5F5562;
+@graybrown: #8B847F;
+@aqua: #76D4D6;
+@lavenderred: #807681;
+@yellow: #cda869;
+@beige: #cda869;
+@purple: #694C61;
+@lavender: #AEA9B8;
+@paleblue: #848D9E;
+
+
+/* Editor styling */
+
+@background: #E3E1E9; // Code background
+@foreground: #999999; // Code foreground
+@comment: #8E8E8E; // Comment color
+@comment-active: #b1b2b3; // Comment active
+@cursor: #000000; // Cursor color 
+@activeline-background: rgba(255, 255, 255, 0.2); // Active line
+@activeline-foreground: rgba(255, 255, 255, 0.4);
+@matchingtag-background: rgba(255, 255, 255, 0.4); // Matching tag
+@selected-background: rgba(255, 255, 255, 0.6); // Selected text
+@matchingbracket-background: rgba(255, 255, 255, .2); // Matching bracket
+
+/* Inline styling */
+
+@string: @rose; // String
+@tag: @graybrown; // HTML tag and primary variable
+@variable: @rose; // Variable
+@variable2: @lavender; // Alternate variable
+@number: @lavenderred; // Number
+@definition: @purple; // CSS value
+@keyword: @paleblue; // CSS !important, JavaScript variable definition
+@operator: @lavenderred; // Math
+@meta: rgba(0, 0, 0, 0.05); // DOCTYPE and PHP background
+@meta-color: @dark; // DOCTYPE and PHP font color
+@id: @purple; // CSS ID, built in
+@attribute: @lavender; // HTML attribute
+@property: @gray; // CSS key
+@qualifier: @graybrown; // CSS class
+@error: @paleblue; // Error!
+
+/* Styles */
+
+.CodeMirror, .CodeMirror-scroll { background: @background; color: @lavender; line-height: 1.3; } // Overlay
+.CodeMirror-selected { background: @selected-background !important; } // Selected text
+.CodeMirror-linenumber { color: @lavender; } // Line numbers
+.cm-comment { color: @comment !important; }
+.cm-keyword { color: @keyword; } // Keyword
+.cm-atom { color: @definition; } // Definition
+.cm-number { color: @number; } // Number
+.cm-def {	color: @definition; } // Definition
+.cm-variable { color: @variable2; } // Variable
+span.cm-variable-2 { color: @paleblue } // Variable 2
+span.cm-tag { color: @tag; } // Tag
+span.cm-variable-3, span.cm-def { color: @variable; } // Variable
+.cm-operator { color: @operator; } // Math
+.cm-string { color: @string; } // String
+.cm-string-2 { color: @string; }
+.cm-meta { 	background: @meta; 	color: @meta-color; } // Meta
+.cm-builtin { color: @id; } // Built in and id
+.cm-tag { color: @tag; } // Tag
+.cm-attribute { color: @attribute; } // Attribute
+.cm-header { color: @attribute; } // Header
+.cm-hr { color: @comment; }
+.cm-link { color: @operator; }
+.cm-error { color: @error; background: RGBA(0, 0, 0, .1); }
+.cm-qualifier { color: @qualifier; } // Qualifier
+.cm-property { color: @property; } // Property
+.cm-quote { color: @keyword } // Quote
+.cm-link, .cm-link.cm-variable-2 { color: @graybrown !important } // Links
+.cm-em { color: @purple } // Italic
+.cm-strong { color: @lavenderred } // Bold
+.cm-image { color: @graybrown } // Image
+.cm-image-marker { color: @purple }
+.cm-header { color: @lavender }
+.cm-string.cm-variable-2.cm-url { color: @rose }
+/* Additional styles */
+
+.CodeMirror-matchingbracket { // Matching bracket
+	outline: 1px solid #888;
+	color: white !important;
+	background: @matchingbracket-background;
+}
+.CodeMirror-activeline .cm-comment { color: @comment-active; } // Active comment
+.CodeMirror-matchingtag { background: @matchingtag-background; } // Matching tag
+.CodeMirror .CodeMirror-cursor {
+	border-left: 1px solid @cursor !important;
+}
+.CodeMirror .CodeMirror-overwrite .CodeMirror-cursor {
+	border-left: none !important;
+	border-bottom: 1px solid @cursor;
+	width: 1.2ex;
+}
+.CodeMirror-guttermarker { color: @white; }
+.CodeMirror-guttermarker-subtle { color: @gray; }
+.CodeMirror .CodeMirror-gutters { background-color: @background; border-right: 0; }
+.CodeMirror-gutter-elt { color: @comment !important; }
+.CodeMirror-activeline .CodeMirror-gutter-elt { color: #fff !important; }
+.CodeMirror .CodeMirror-linenumber { color: @lavender; }
+.CodeMirror-activeline-background, .CodeMirror-activeline .CodeMirror-gutter-elt { background: @activeline-background !important; }
+.cm-meta.CodeMirror-searching { background: #f5ee92 !important; color: #4e4225 !important; }
+.cm-meta.CodeMirror-searching.searching-current-match { background: #f5ee92 !important; color: #4e4225 !important; } 

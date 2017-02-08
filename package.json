@@ -1,0 +1,15 @@
+{
+    "name": "tundra-light",
+    "title": "Tundra Light",
+    "description": "Feel the chill air blowing",
+    "homepage": "https://github.com/jmyser/tundra-light",
+    "version": "1.0.3",
+    "author": "j myser <jmyser@gmail.com> (https://github.com/jmyser)",
+    "license": "MIT",
+    "theme": {
+        "file": "main.less",
+        "dark": false,
+        "addModeClass": true
+    },
+    "keywords": ["theme"]
+}
